@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample2_05</title>
+  </head>
+  <body>
+    <h2>足し算の結果</h2>
+    <script>
+      let numA = 10;
+      let numB = 20;
+      document.write("numA = " + numA + "<br>" );
+      document.write('numB = ' + numB + '<br>' );
+      document.write('numA + numB = ' + numA + numB + '<br>');
+      // 演算の処理は左から順に行なっていくため、一番左に何があるかが重要。
+      // 14行目の場合、文字列'numA + numB'に対してnumAとnumBを連結するという処理になるので文字列 'numA + numB = 1020'と出力される。
+      document.write(numA + numB + ' = numA + numB' + '<br>');
+      // 17行目の場合、数値10に数値20を加算するという処理から始まり、その後文字列'= numA + numB'を連結するという処理になるので、
+      // 文字列 '30 = numA + numB' と出力される。
+      let sum = numA + numB;
+      document.write( '"足し算" の結果は' + sum + '<br>');
+    </script>
+  </body>
+</html>
