@@ -9,11 +9,11 @@
     <script>
     let taka = window.prompt('三角形の高さは？');
     // 繰り返し①開始
-    let i = 0;
-    while( i < taka ) {
-      // 繰り返し②開始
-      document.write('◼️');
-      // 繰り返し②終了
+
+    for(let i = 1; i <= taka; i++) {
+      for(let j =1; j<= i; j++){
+        document.write('◼️');
+      }
       document.write('<br>');
     }
     // 繰り返し①終了
