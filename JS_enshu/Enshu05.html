@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Enshu05</title>
+  </head>
+  <body>
+    <h2>凶が出ないおみくじ</h2>
+    <script>
+      let count = Number(window.prompt('何回おみくじ引く？'));
+      let omikujiStr = ['小吉', '中吉！', '吉！！', '大吉！！！'];
+
+      for(let i = 0; i < count; i++) {
+        let omikuji = Math.floor(Math.random() *4)
+        document.write(omikujiStr[omikuji] + '<br>');
+      }
+      // 乱数の発生と、乱数を配列の添字として結果を表示する。これを指定された回数分繰り返す処理を記述
+    </script>
+  </body>
+</html>
